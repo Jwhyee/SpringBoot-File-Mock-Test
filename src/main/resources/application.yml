@@ -10,10 +10,10 @@ spring:
     restart:
       enabled: true
   datasource:
-    url: jdbc:mariadb://127.0.0.1:3306/app10?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul
+    url: jdbc:mysql://localhost:3306/app10?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     username: root
-    password:
-    driver-class-name: org.mariadb.jdbc.Driver
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: create
